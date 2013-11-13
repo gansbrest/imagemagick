@@ -1,4 +1,3 @@
-name             "imagemagick"
 maintainer       "Opscode, Inc."
 maintainer_email "cookbooks@opscode.com"
 license          "Apache 2.0"
@@ -13,3 +12,5 @@ recipe "imagemagick::rmagick", "Installs rmagick gem"
 %w{fedora centos rhel ubuntu debian}.each do |os|
   supports os
 end
+
+depends "ark", "~> 0.3"

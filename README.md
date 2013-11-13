@@ -16,7 +16,7 @@ Tested on:
 Usage
 =====
 
-To install just ImageMagick,
+To install just ImageMagick package,
 
   include_recipe "imagemagick"
 
@@ -29,6 +29,18 @@ To install the RubyGem rmagick,
   include_recipe "imagemagick::rmagick"
 
 Which will install imagemagick, as well as the development libraries for imagemagick (so rmagick can be built).
+
+To install from source,
+  
+  include_recipe "imagemagick::source" ( there is also corresponding attributes file )
+
+
+Changes
+=======
+
+## v0.2.2:
+
+* Fixes COOK-662
 
 License and Author
 ==================
